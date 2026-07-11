@@ -5,7 +5,7 @@ A collection of Python scripts for learning and reference. Each script teaches o
 ## Structure
 
 ```
-topics/<topic>/<descriptive_name>.py     # the teaching script
+scripts/<topic>/<descriptive_name>.py    # the teaching script
 tests/<topic>/test_<descriptive_name>.py # its test, same topic, mirrored path
 ```
 
@@ -15,8 +15,8 @@ tests/<topic>/test_<descriptive_name>.py # its test, same topic, mirrored path
 - **Every script has a module-level docstring** at the top explaining the concept it demonstrates, so the file is useful as a standalone reference.
 - **Scripts are heavily commented.** This is a learning exercise, not production code — comment the *why* and the *how* generously (not just the non-obvious bits) so a script can be read top-to-bottom as a mini-tutorial on its own.
 - **Every script gets a matching test file** in the mirrored `tests/<topic>/` path, named `test_<script_name>.py`. Do not add a script without a test — this is a hard requirement for this repo, not a suggestion.
-- New concepts get their own topic folder under `topics/` (with a mirrored folder under `tests/`) when they don't fit an existing one.
-- Empty topic folders are seeded with a placeholder `.gitkeep` file (git doesn't track empty directories otherwise). When you add the first script to one of those folders, delete its `.gitkeep` in `topics/<topic>/` and `tests/<topic>/` in the same commit — the real files hold the folder in the tree from then on.
+- New concepts get their own topic folder under `scripts/` (with a mirrored folder under `tests/`) when they don't fit an existing one.
+- Empty topic folders are seeded with a placeholder `.gitkeep` file (git doesn't track empty directories otherwise). When you add the first script to one of those folders, delete its `.gitkeep` in `scripts/<topic>/` and `tests/<topic>/` in the same commit — the real files hold the folder in the tree from then on.
 
 ## Running tests
 
@@ -26,4 +26,4 @@ From the repo root:
 pytest
 ```
 
-`pyproject.toml` sets `pythonpath = ["."]`, so tests import scripts as `from topics.<topic>.<script_name> import ...`.
+`pyproject.toml` sets `pythonpath = ["."]`, so tests import scripts as `from scripts.<topic>.<script_name> import ...`.

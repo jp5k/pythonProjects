@@ -54,7 +54,7 @@ def even_numbers_with_comprehension(numbers):
 
 if __name__ == "__main__":
     # A quick, human-readable demo when running this file directly with:
-    #   python topics/fundamentals/list_comprehensions_vs_loops.py
+    #   python scripts/fundamentals/list_comprehensions_vs_loops.py
     sample = [1, 2, 3, 4, 5, 6]
 
     print("Input:", sample)

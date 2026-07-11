@@ -4,7 +4,7 @@ A collection of Python code for learning, practicing, and understanding Python â
 
 ## Structure
 
-Scripts live under `topics/<topic>/`, each with a descriptive name explaining what it teaches. Every script has a matching test under `tests/<topic>/`. See [CLAUDE.md](CLAUDE.md) for the full conventions.
+Scripts live under `scripts/<topic>/`, each with a descriptive name explaining what it teaches. Every script has a matching test under `tests/<topic>/`. See [CLAUDE.md](CLAUDE.md) for the full conventions.
 
 ## Setup
 
@@ -25,7 +25,7 @@ Every time you open a new terminal to run scripts or tests, activate the environ
 ```
 source .venv/bin/activate
 pytest
-python topics/fundamentals/list_comprehensions_vs_loops.py
+python scripts/fundamentals/list_comprehensions_vs_loops.py
 ```
 
 Activation just points `python`/`pytest` at the copies inside `.venv/` instead of the system ones. It only lasts for that terminal session â€” run `deactivate` to leave it, or just close the terminal.

@@ -1,5 +1,5 @@
 """
-Tests for topics/fundamentals/list_comprehensions_vs_loops.py
+Tests for scripts/fundamentals/list_comprehensions_vs_loops.py
 
 These tests check two things for each pair of functions:
   1. Each function individually produces the correct result.
@@ -7,7 +7,7 @@ These tests check two things for each pair of functions:
      other — proving they really are two ways of writing the same logic.
 """
 
-from topics.fundamentals.list_comprehensions_vs_loops import (
+from scripts.fundamentals.list_comprehensions_vs_loops import (
     even_numbers_with_comprehension,
     even_numbers_with_loop,
     squares_with_comprehension,
