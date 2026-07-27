@@ -10,6 +10,8 @@ tooling: static checkers like mypy or pyright read them and flag mismatches
 before you run anything. But the Python interpreter itself does NOT
 enforce them at runtime — a hint is a promise to the reader, not a
 contract the language checks for you.
+
+Can also specify a variable with a type, e.g. x: int = 42
 """
 
 from typing import Optional
