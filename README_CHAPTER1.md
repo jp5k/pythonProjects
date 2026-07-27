@@ -31,5 +31,9 @@ Use 'break' to break out of a loop.
 Use 'continue' to move back up to the start of the loop.
 
 
-# Use the walrus operator := for assignment and conditional.
+## Use the walrus operator := for assignment and conditional.
+
+## Strings
+Strings can be enclosed in single, double or triple quotes.
+Triple quoted strings are useful to allow strings over multiple lines.  
 
