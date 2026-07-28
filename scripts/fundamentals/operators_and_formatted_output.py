@@ -1,5 +1,9 @@
 """
-Data Structures
+Operators and Formatted Output
+
+Covers printf-style string formatting with f-strings, floor (truncating)
+division with //, and the walrus operator (:=) for assigning inside an
+expression.
 """
 
 
@@ -36,7 +40,7 @@ def count_up_with_walrus(limit):
 
 if __name__ == "__main__":
     # A quick, human-readable demo when running this file directly with:
-    #   python scripts/fundamentals/data_structures.py
+    #   python scripts/fundamentals/operators_and_formatted_output.py
     printf_function()
 
     # 7 / 2 is 3.5, but floor division truncates down to 3.

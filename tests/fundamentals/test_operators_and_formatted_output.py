@@ -1,8 +1,11 @@
 """
-Tests for scripts/fundamentals/data_structures.py
+Tests for scripts/fundamentals/operators_and_formatted_output.py
 """
 
-from scripts.fundamentals.data_structures import count_up_with_walrus, floor_divide
+from scripts.fundamentals.operators_and_formatted_output import (
+    count_up_with_walrus,
+    floor_divide,
+)
 
 
 def test_floor_divide_exact():
