@@ -37,3 +37,27 @@ Use 'continue' to move back up to the start of the loop.
 Strings can be enclosed in single, double or triple quotes.
 Triple quoted strings are useful to allow strings over multiple lines.  
 
+## Exceptions
+When an exception occurs, the program resumes in exactly the position AFTER the except block.  The program does not return to the location where the exception occurred.  
+
+Use `raise` to raise an exception.  
+
+Typically, can use the `with` statement for resource management, to simplify complex try/except statements.  
+
+## Program termination
+Force a program to quit either using:
+`rasie SystemExit()  # Exit with no error message `
+`raise SystemExit("Something is wrong")  # Exit with error message`
+
+Can use the atexit module to perform specific cleanup operations.  
+
+import atexit
+
+connection = open_connection('google.com')
+
+def cleanup():
+  print "Going away..."
+  close_connection(connection)
+
+atexit.register(cleanup)
+
