@@ -61,3 +61,8 @@ def cleanup():
 
 atexit.register(cleanup)
 
+## Objects and Classes
+The dir() function lists the methods available on an object.  It is a useful tool for interactive experimentation when no fancy IDE is available.
+
+You will see special methods that begin and end with double underscores, e.g. items.__add__([73, 101])
+
