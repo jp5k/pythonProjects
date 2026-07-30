@@ -66,3 +66,14 @@ The dir() function lists the methods available on an object.  It is a useful too
 
 You will see special methods that begin and end with double underscores, e.g. items.__add__([73, 101])
 
+## Imports
+If the import statemnet fails with an ImportError exception, you need to check a few things in your environment.  Check the directories listed on sys.path (using REPL), if your file isn't saved in one of those directories, Python won't be able to find it.  
+
+Can use `as` to import a module under a different name, e.g. 
+`import readport as rp`
+
+As with objects, the dir() function lists the contents of a module.  It is as useful tool for interactive experimentation.
+`import scripts.fundamentals.lists`
+`dir(scripts.fundamentals.lists)`
+
+See https.pypi.org for a vast array of 3rd party modules that can be installed to solve almost any imaginable task.  
