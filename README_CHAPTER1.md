@@ -77,3 +77,48 @@ As with objects, the dir() function lists the contents of a module.  It is as us
 `dir(scripts.fundamentals.lists)`
 
 See https.pypi.org for a vast array of 3rd party modules that can be installed to solve almost any imaginable task.  
+
+## Package structure 
+Organise Python projects into the following structure.
+
+Ensure you include the __init__.py file, which may be empty.  Once you've done this, you should be able to make nested import statements.  
+
+You can use a package-relative import like this:
+`from . import readport`
+This has the benefit of not hardcoding the package name.  This makes it easier to later rename a package or move it around within your project.  
+
+## Structuring an application
+Typical to have the following structure:
+
+tutorial-project/
+  tutorial/
+      __init__.py
+      readport.py
+      pcost.py
+      stack.py
+      ...
+  tests/
+      test_stack.py
+      test_pcost.py
+      ...
+  examples/
+      sample.py
+      ...
+  doc/
+      tutorial.txt
+      ...
+
+## Third party packages
+Python Package Index (https://pypi.org) has a large libray of contributed packages.  To install a third party package, use a command such as pip:
+`python3 -m pip install somepackage`
+
+Installed packages are placed into a special site-packages directory that you can find if you inspect the value of sys.path.  If you need to find out where package comes from, inspect the __file__ attribute of a package after importing it:
+`import pandas`
+`pandas.__file__`
+
+To make a sandbox where you can install packages and work without worrying about breaking anything, create a virtual environment:
+`python3 -m venv myproject`
+
+This will set up a dedicated Python installation for you in a directory called myproject/.  Within that directory, you'll find an interpreter executable and library where you can safely install packages.  For example, if you run `myproject/bin/python3`, you'll get an interpreter configured for your personal use.  You can install packages into this interpreter without worrying about breaking any part of the default Python installation.  To install a package, use pip as before but make sure to specify the correct interpreter:
+`./myproject/bin/python3 -m pip install somepackage`
+
