@@ -122,3 +122,56 @@ To make a sandbox where you can install packages and work without worrying about
 This will set up a dedicated Python installation for you in a directory called myproject/.  Within that directory, you'll find an interpreter executable and library where you can safely install packages.  For example, if you run `myproject/bin/python3`, you'll get an interpreter configured for your personal use.  You can install packages into this interpreter without worrying about breaking any part of the default Python installation.  To install a package, use pip as before but make sure to specify the correct interpreter:
 `./myproject/bin/python3 -m pip install somepackage`
 
+## Useful Python libraries
+
+**Data manipulation & analysis**
+- **pandas** — tabular data (you already know this one)
+- **NumPy** — fast numerical arrays, the foundation most other data libraries are built on
+- **openpyxl / xlrd** — reading/writing Excel files directly
+
+**Visualization**
+- **Matplotlib** — the standard plotting library, low-level but flexible
+- **Seaborn** — built on Matplotlib, nicer defaults for statistical plots
+- **Plotly** — interactive charts (good for dashboards/web)
+
+**Web development**
+- **Flask** — lightweight web framework, easy to learn
+- **Django** — full-featured web framework (auth, admin panel, ORM built in)
+- **FastAPI** — modern framework for building APIs, very popular now, auto-generates docs
+
+**Web scraping / HTTP**
+- **requests** — the standard way to make HTTP calls
+- **BeautifulSoup** — parsing HTML for scraping
+- **Scrapy** — full scraping framework for larger projects
+
+**Automation / scripting**
+- **os / pathlib** — built-in, file and path handling
+- **subprocess** — running shell commands from Python
+- **schedule** or **APScheduler** — running tasks on a timer
+
+**Testing**
+- **pytest** — the de facto standard for writing tests
+- **unittest** — built into Python, more verbose than pytest
+
+**Machine learning / AI**
+- **scikit-learn** — classic ML algorithms (regression, classification, clustering)
+- **PyTorch** or **TensorFlow** — deep learning frameworks (PyTorch is more popular currently)
+- **Hugging Face Transformers** — pretrained NLP/LLM models
+
+**Environment & dependency management**
+- **venv** — built-in, creates isolated environments
+- **pip** — package installer (you likely already use this)
+- **poetry** or **uv** — more modern dependency/project management (uv is newer and very fast)
+
+**Code quality**
+- **black** — auto-formats your code
+- **ruff** — very fast linter (replacing older tools like flake8)
+- **mypy** — static type checking
+
+**Command-line tools**
+- **argparse** — built-in, parsing CLI arguments
+- **click** or **typer** — nicer libraries for building CLI tools
+
+**Databases**
+- **SQLAlchemy** — ORM for working with SQL databases in Python objects
+- **sqlite3** — built-in, good for small local databases
